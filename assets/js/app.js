@@ -181,10 +181,10 @@ function renderQuestion(questionIndex) {
 
             // If it's the last question, end the game with a 500ms delay so user can see their feedback first
             if (nextQuestionIndex >= questions.length) {
-                setTimeout(() => {return endGame()}, 500);
+                setTimeout(() => {return endGame()}, 600);
             } else {
             // else render the next question 
-                setTimeout(() => {renderQuestion(nextQuestionIndex);}, 500);
+                setTimeout(() => {renderQuestion(nextQuestionIndex);}, 600);
             }
         });
 
